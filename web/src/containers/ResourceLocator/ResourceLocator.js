@@ -1,6 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+let map;
+function initMap() {
+    fetch(
+        ""
+    )
+    map = new google.maps.Map(documents.getElementById("map"), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8,
+    });
+}
 const resourceLocator = (props) => {
     return(
         <div>
@@ -22,6 +31,9 @@ const resourceLocator = (props) => {
                 <Link to='/locator'>go to Resource Locator</Link>
             </div>
 
+            <div class="map">
+                
+            </div>
         </div>
     );
 }
