@@ -4,8 +4,7 @@ import {
     FoodLogo,
     Title,
     Slogan
-} from './HomePageElements';
-import Navbar from '../Navbar/index';
+} from './HomePageElement';
 
 const homePage = () =>  {
     return (
