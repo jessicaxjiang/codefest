@@ -1,12 +1,15 @@
 import React from 'react';
 import Wallpaper from '../../images/home_page.jpg';
 import {
+    HomeContainer,
     FoodLogo,
     Title,
-    Slogan
+    Slogan,
+    InfoBox,
+    Description
 } from './HomePageElement';
 
-const homePage = () =>  {
+const HomePage = () =>  {
     return (
         <div 
             class="bg_image"
@@ -17,11 +20,16 @@ const homePage = () =>  {
                 color: '#f5f5f5'
             }}  
         >
+                {/* <HomeContainer> */}
                 <Title>LocaFood</Title>
                 <FoodLogo/>
                 <Slogan>Notifying Free Food Everywhere.</Slogan>
+                <InfoBox>
+                    <Description></Description>
+                </InfoBox>
+                {/* </HomeContainer> */}
         </div>
     );
 }
 
-export default homePage;
+export default HomePage;
